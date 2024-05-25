@@ -6,7 +6,10 @@ require('dotenv').config()
 
 app.use((req, res, next) => {
   // CORS
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000')
+  res.header(
+    'Access-Control-Allow-Origin',
+    'https://delicious-dispatch.netlify.app'
+  )
   res.header(
     'Access-Control-Allow-Headers',
     'Origin, X-Requested-With, Content-Type, Accept'
