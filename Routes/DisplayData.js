@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/foodData', async (req, res) => {
+router.post('/foodData', async (req, res) => {
   try {
     console.log(global.food_items)
     res.json([global.food_items, global.foodCategory])
